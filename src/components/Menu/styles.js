@@ -12,6 +12,11 @@ export const Code = styled.View`
     overflow: hidden;
 `;
 
+export const CodigoQr = styled.Image`
+    width: 80px;
+    height: 80px;
+`;
+
 export const Nav = styled.View`
     margin-top: 20px;
     border-top-width: ${StyleSheet.hairlineWidth}px;

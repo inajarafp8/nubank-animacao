@@ -4,8 +4,9 @@ import React from 'react';
 import QRCode from 'react-native-qrcode';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import QrCode from '~/assets/qr-code.png'
 
-import { Container, Code, Nav, NavItem, NavText, SignOutButton, SignOutButtonText} from './styles';
+import { Container, Code, CodigoQr, Nav, NavItem, NavText, SignOutButton, SignOutButtonText} from './styles';
 
 
 
@@ -19,13 +20,13 @@ export default function Menu({translateY}){
             }),
           }}>
             <Code>
-                
-                <QRCode 
+                {/* <QRCode 
                 value="https://rocketseat.com.br"
                 size={80}
                 fgColor="#fff"
                 bgColor="#8B10AE"
-                />
+                /> */}
+                <CodigoQr source={QrCode} />
             </Code>
             <Nav>
                 <NavItem>
